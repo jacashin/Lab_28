@@ -1,0 +1,22 @@
+﻿@model List<Cards>
+@{
+    ViewData["Title"] = "About";
+}
+
+<p>
+    Here's your info:
+    @foreach (var item in Model)
+    {
+        <ul>
+            @item.cards.Rank
+            
+        </ul>
+    }
+</p>
+
+
+    @*<div>
+        @Model.images
+    </div>*@
+
+

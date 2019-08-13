@@ -1,0 +1,18 @@
+﻿@model CardDeck
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>
+    New deck?
+    @Model.success
+    
+    </h2>
+<h3>
+    Deck ID: 
+    @Model.deck_Id
+<button asp-action="About" onclick="submit" formmethod="get">Click Here</button>   
+</h3> 
+
+    
+

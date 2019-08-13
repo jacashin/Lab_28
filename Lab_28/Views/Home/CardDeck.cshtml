@@ -1,0 +1,14 @@
+﻿@model CardDeck
+@{
+    ViewData["Title"] = "CardDeck";
+}
+
+<h2>CardDeck</h2>
+
+<p>
+    @Model.shuffled
+    @Model.success
+    @Model.deck_Id
+    @Model.remaining
+
+</p>
